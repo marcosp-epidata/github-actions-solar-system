@@ -50,7 +50,7 @@ jobs:
       - name: Install NodeJS dependencies
         run: npm install
       - name: Execute Code Coverage
-        run: npm run code-coverage
+        run: npm run coverage
       - name: Upload Code Coverage
         uses: actions/upload-artifact@v3
         with:
