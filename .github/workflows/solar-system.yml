@@ -104,7 +104,7 @@ jobs:
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/solar-system:${{ github.sha }}
     dev-deploy:
-      needs: [docker]
+      needs: docker
       runs-on: ubuntu-latest
       environment:
         name: development
